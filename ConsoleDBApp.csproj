@@ -13,4 +13,8 @@
     <EmbeddedResource Include="UserDB.sqlite" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
+  </ItemGroup>
+
 </Project>
