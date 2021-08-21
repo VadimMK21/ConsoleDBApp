@@ -5,16 +5,4 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="UserDB.sqlite" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="UserDB.sqlite" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
-  </ItemGroup>
-
 </Project>
