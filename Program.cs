@@ -14,6 +14,8 @@ namespace ConsoleDBApp
 
             int Sum = a + b;
             Console.WriteLine(Sum);
+
+            Console.WriteLine("Test21");
             //
         }
     }
