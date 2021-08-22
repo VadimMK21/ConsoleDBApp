@@ -6,22 +6,7 @@ namespace ConsoleDBApp
     {
         static void Main(string[] args)
         {
-
-            Console.WriteLine("a");
-            int a = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("b");
-            int b = Int32.Parse(Console.ReadLine());
-
-            int Sum = a + b;
-            Console.WriteLine(Sum);
-
-
-            // WTF222222222
-
-            Console.WriteLine("Test21");
-
-            Console.WriteLine("Test22");
-            //
+                        
         }
     }
 }
