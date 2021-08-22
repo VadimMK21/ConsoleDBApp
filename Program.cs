@@ -6,7 +6,8 @@ namespace ConsoleDBApp
     {
         static void Main(string[] args)
         {
-            
+            Console.WriteLine("Hi");
+
         }
     }
 }
