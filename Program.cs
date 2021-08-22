@@ -16,6 +16,8 @@ namespace ConsoleDBApp
             Console.WriteLine(Sum);
 
             Console.WriteLine("Test21");
+
+            Console.WriteLine("Test22");
             //
         }
     }
