@@ -1,14 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Sqlite;
-using System;
 
 namespace ConsoleDBApp
 {
-    class Context : DbContext
+    public class Context : DbContext
     {
-        protected Context() : base("DbConnectionString")
+        public DbSet<User> Users { get; set; }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-
+            optionsBuilder.UseSqlite("Data Source=UsersDB.sqlite");
+            base.OnConfiguring(optionsBuilder);
         }
     }
 }
