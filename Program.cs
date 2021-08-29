@@ -8,6 +8,8 @@ namespace ConsoleDBApp
     {
         static void Main(string[] args)
         {
+
+            
             using (var db = new Context())
             {
                 Console.WriteLine($"Database path: {db.DbPath}.");
@@ -24,12 +26,15 @@ namespace ConsoleDBApp
 
                 db.Add(new User { name = nm, adress = adr });                
                 db.SaveChanges();
-                
+
+                Console.OutputEncoding = System.Text.Encoding.Unicode;
+
                 foreach (var user in db.Users)
                 {
                     Console.WriteLine("{0} | {1}", user.name, user.adress);
                 }
 
+                Console.ReadKey();
             }
         }
     }
