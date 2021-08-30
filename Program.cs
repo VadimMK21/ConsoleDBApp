@@ -1,6 +1,5 @@
 ﻿using System;
-
-
+using System.IO;
 
 namespace ConsoleDBApp
 {
@@ -12,7 +11,9 @@ namespace ConsoleDBApp
             
             using (var db = new Context())
             {
-                Console.WriteLine($"Database path: {db.DbPath}.");
+                string path = Directory.GetCurrentDirectory();
+
+                Console.WriteLine($"Database path: {path}\\{db.DbPath}.");
 
                 Console.WriteLine("Введите имя");
                 string nm = Console.ReadLine();
