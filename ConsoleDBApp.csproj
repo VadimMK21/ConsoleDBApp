@@ -11,7 +11,7 @@
 
   <ItemGroup>
     <EmbeddedResource Include="UsersDB.sqlite">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
 
